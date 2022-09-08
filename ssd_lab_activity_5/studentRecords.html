@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Records</title>
+        <style>
+            table, th, td{
+                border:1px solid black;
+            }
+        </style>
+        
+    </head>
+    <body>
+        <div>
+            <form>
+            <label for="rollno">Roll No.</label>        
+            <input id="rollno" name="rollno">
+            <label for="sname">Student Name</label>
+            <input id="sname" name="sname">
+            <input type="button" value="Add New"><br><br><br>
+            </form>
+        </div>
+        <table id="stu_table" style="width:50%">
+            <tr>
+                <th>Roll No.</th>
+                <th>Student Name</th>
+            </tr>
+        </table><br><br><br>
+        <input type="button" value="Delete Last Record">
+        <script src="./script.js"></script>
+    </body>
+</html>
