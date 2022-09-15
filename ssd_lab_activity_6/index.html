@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js"></script>
+</head>
+<body>
+
+<h2>Team Form</h2>
+
+<form action="">
+  <label for="m_name">Manager Name</label><br>
+  <input type="text" id="m_name" name="m_name" value="" required><br>
+
+  <label for="grp_email">Group Email</label><br>
+  <input type="email" id="grp_email" name="grp_email" value="" required><br>
+
+  <label for="s_uname">Server Username</label><br>
+  <input type="text" id="s_uname" name="s_uname" value="" pattern="(?=.*\d)(?=.*[A-Z]).{2,}" required><br>
+
+  <label for="s_pwd">Server Password</label><br>
+  <input type="password" id="s_pwd" name="s_pwd" value="" required><br>
+ 
+  <label for="c_pwd">Confirm Password</label><br>
+  <input type="password" id="c_pwd" name="c_pwd" value="" required><br>
+ 
+  <label for="t_lead">Team Lead</label><br>
+  <select id="t_lead" name="t_lead">
+    <option value="neeraj">Neeraj Asdev</option>
+    <option value="abhijeet">Abhijeet Renge</option>
+    <option value="venkata">Venkata Sriram</option>
+    <option value="abhay">Abhay Kaushik</option>
+  </select>
+  <br>
+ 
+  <label for="t_mem">Team Members</label><br>
+  
+  <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+    
+  </div>
+  <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+  
+  <input type="submit" value="Submit" onclick="myFunction2()">
+</form> 
+<br>
+<button onclick="myFunction()">Dark/Light Mode</button>
+</body>
+</html>
+
+
+
+
+
+
+
